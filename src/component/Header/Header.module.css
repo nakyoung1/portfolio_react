@@ -1,0 +1,93 @@
+@font-face {
+     font-family: "Pretendard-Regular";
+     src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+     font-weight: 400;
+     font-style: normal;
+}
+@font-face {
+     font-family: "RixYeoljeongdo_Regular";
+     src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff")
+          format("woff");
+     font-weight: normal;
+     font-style: normal;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body,
+p,
+h4 {
+     font-family: "Pretendard-Regular";
+}
+
+/*헤더*/
+header {
+     position: relative;
+     width: 100%;
+     color: #eee;
+     text-align: center;
+     height: 400px;
+     background-image: url("../img/about_background.jpeg");
+     background-size: cover;
+     background-position: center;
+}
+header::after {
+     content: ""; /* 비어있는 내용 */
+     position: absolute; /* 부모 요소 위에 위치 */
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.4); /* 어두운 반투명 레이어 추가 */
+     z-index: 1; /* 반투명 어두운 레이어가 흐린 배경 위로 오도록 설정 */
+}
+header nav {
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+     height: 100px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+header p {
+     cursor: pointer;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+header p:hover {
+     color: #dfafaf;
+}
+
+ul {
+     list-style: none;
+}
+.header_list {
+     display: flex;
+     justify-content: center;
+}
+.header_list li {
+     margin: 10px;
+     font-size: 20px;
+}
+html {
+     scroll-padding-top: 110px; /* nav 높이만큼 스크롤 위치 조정 */
+}
+.header_list a {
+     text-decoration: none;
+     color: #eee;
+     transition: padding-top 0.3s ease;
+}
+
+.header_list a:hover {
+     color: #dfafaf;
+}
+header span {
+     margin: 0 auto;
+}

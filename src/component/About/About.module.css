@@ -1,0 +1,65 @@
+@font-face {
+     font-family: "Pretendard-Regular";
+     src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+     font-weight: 400;
+     font-style: normal;
+}
+@font-face {
+     font-family: "RixYeoljeongdo_Regular";
+     src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff")
+          format("woff");
+     font-weight: normal;
+     font-style: normal;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.container {
+     padding: 20px 0;
+}
+
+.wrapper {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     row-gap: 70px;
+}
+
+/* .introduce_box {
+   
+} */
+
+.about_icon {
+     width: 33%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.about_icon aside:first-child {
+     width: 40%;
+     text-align: right;
+}
+.about_icon aside:nth-child(2) {
+     width: 60%;
+     text-align: center;
+}
+
+.about_icon aside {
+     color: #111;
+}
+.about_icon aside h4 {
+     margin-bottom: 10px;
+     font-weight: 800;
+     font-size: 20px;
+}
+
+.about_container {
+     margin: 0 auto;
+}
